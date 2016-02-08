@@ -27,7 +27,7 @@ module.exports=function(app){
 	var command='curl "' + url + '"' + ' ' + args
 
 	var http=require('http')
-	
+
 	var server=http.createServer(app).listen(port)
 
 	console.log('Running: ' + command)
@@ -35,5 +35,6 @@ module.exports=function(app){
 		if(err) console.log(err)
 		console.log(body)
 		server.close()
+		process.exit()
 	})
 }

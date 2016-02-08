@@ -1,11 +1,23 @@
 {
   "name": "curl-current-app",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Sometimes is hard to test node.js apps that use's `express` modules, directly from command prompt.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminag/curl-current-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aminag/curl-current-app/issues"
+  },
+  "homepage": "https://github.com/aminag/curl-current-app#readme"
 }
