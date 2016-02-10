@@ -1,3 +1,14 @@
+/*
+	Before editing this file, be sure that you have the lastest version of it
+	copy \git\amiShared\curl-current-app\
+
+	If editing this file not in the original folder, don't forget to copy to there.
+	If not, All changes will be lost.
+
+	copy index.js \git\amiShared\curl-current-app\
+
+*/
+
 module.exports=function(app){
 	// var args=process.argv.join(' ')
 	var url
@@ -21,6 +32,8 @@ module.exports=function(app){
 		console.log('You not specify the URL. The url must start with /')
 		return
 	}
+
+	if(foundCurl) module.exports.isCurl=true
 	var port=parseInt(Math.random()*1000+5000)
 	url='http://127.0.0.1:' + port  + url
 
